@@ -1,0 +1,1 @@
+This batch contains the cursor-following electric snake animation script.

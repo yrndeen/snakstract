@@ -1,0 +1,233 @@
+/* GLOBAL STYLES - global.css */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Montserrat:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #00ffcc;
+  --secondary-color: #6c5ce7;
+  --background-dark: #1a1f2e;
+  --background-light: #2a2f3e;
+  --text-color: #ffffff;
+  --font-heading: 'Orbitron', sans-serif;
+  --font-body: 'Montserrat', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-heading);
+  background: var(--background-dark);
+  color: var(--text-color);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .logo-text, .tagline {
+  font-family: var(--font-heading);
+}
+
+button,
+input,
+.wager-button,
+.custom-wager-input {
+  font-family: var(--font-heading);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove any default focus outlines and add custom ones */
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00e6b8;
+}
+
+/* Ensure the main app container is the only one setting the base page styles */
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 18px;
+  backdrop-filter: blur(8px);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #0d0d0d;
+  border-bottom: 1px solid #00ffcc33;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.snakstract-logo {
+  height: 40px;
+  width: auto;
+}
+
+.main-nav {
+  background-color: #1a1a1a;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #00ffcc33;
+}
+
+.main-nav a {
+  color: #00ffcc;
+  margin: 0 15px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.main-nav a:hover {
+  text-shadow: 0 0 6px #00ffcc;
+  background-color: #00ffcc22;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #1a1a1a88;
+  border-radius: 8px;
+  box-shadow: 0 0 20px #00ffcc22;
+  margin: 20px;
+}
+
+.wallet-container {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  background-color: #00ffcc;
+  border: none;
+  color: #0d0d0d;
+  padding: 10px 20px;
+  margin: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 0 10px #00ffcc88;
+  transition: transform 0.1s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+input {
+  background-color: #1a1a1a;
+  border: 1px solid #00ffcc88;
+  color: #fff;
+  padding: 8px;
+  margin: 5px;
+  border-radius: 4px;
+}
+
+a {
+  color: #00ccff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-shadow: 0 0 5px #00ccff;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Wallet button specific styles */
+.wallet-button-container {
+  position: relative;
+}
+
+.wallet-error {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #ff4444;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  margin-top: 5px;
+  white-space: nowrap;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Glassmorphic card custom scroll bar */
+.glassmorphic-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0,255,204,0.35) rgba(24,28,43,0.15);
+}
+
+.glassmorphic-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.glassmorphic-scroll::-webkit-scrollbar-track {
+  background: rgba(24,28,43,0.15);
+  border-radius: 12px;
+}
+
+.glassmorphic-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(120deg, rgba(0,255,204,0.35), rgba(0,255,204,0.18));
+  border-radius: 12px;
+  box-shadow: 0 0 8px 2px rgba(0,255,204,0.18);
+  border: 2px solid rgba(24,28,43,0.15);
+}
+
+.glassmorphic-scroll::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(120deg, rgba(0,255,204,0.5), rgba(0,255,204,0.25));
+}

@@ -1,0 +1,11 @@
+
+.game-stats-banner {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #00ffcc;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 20px;
+  box-shadow: 0 0 10px #00ffcc88;
+  font-weight: bold;
+}

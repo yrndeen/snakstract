@@ -1,0 +1,61 @@
+/* GameScreen specific styles - importing from ui-enhancements.css */
+@import '../ui-enhancements.css';
+
+/* Additional GameScreen specific styles */
+.name-prompt-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.name-prompt-box {
+  background: rgba(24, 28, 43, 0.95);
+  border: 1px solid #00ffcc33;
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.death-screen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.death-screen-box {
+  background: rgba(24, 28, 43, 0.95);
+  border: 1px solid #ff444433;
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(255, 68, 68, 0.2);
+}
+
+.shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+} 

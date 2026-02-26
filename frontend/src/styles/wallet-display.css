@@ -1,0 +1,28 @@
+
+.wallet-modal {
+  background-color: #111;
+  padding: 12px;
+  position: absolute;
+  right: 20px;
+  top: 60px;
+  border: 1px solid #00ffcc33;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #00ffcc88;
+  z-index: 100;
+}
+
+.wallet-modal button {
+  display: block;
+  background-color: #00ffcc;
+  border: none;
+  color: black;
+  padding: 6px 12px;
+  margin: 6px 0;
+  border-radius: 4px;
+  font-weight: bold;
+  width: 100%;
+  transition: background-color 0.2s;
+}
+.wallet-modal button:hover {
+  background-color: #00ccaa;
+}

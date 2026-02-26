@@ -1,0 +1,22 @@
+.leaderboard-container {
+  padding: 20px;
+  color: #00ffcc;
+  text-align: center;
+}
+
+.leaderboard-container table {
+  margin: 0 auto;
+  width: 80%;
+  border-collapse: collapse;
+  color: white;
+}
+
+.leaderboard-container th,
+.leaderboard-container td {
+  padding: 12px 20px;
+  border-bottom: 1px solid #00ffcc44;
+}
+
+.leaderboard-container tr:hover {
+  background-color: #1a1a1a;
+}

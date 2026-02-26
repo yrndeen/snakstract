@@ -1,0 +1,160 @@
+.referral-page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #f4f4f4;
+  min-height: 100vh;
+  background: url('/snakstract_bg.png') no-repeat center center;
+  background-size: cover;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.page-header h1 {
+  color: #00ffcc;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+}
+
+.page-header p {
+  color: #b2fff7;
+  font-size: 1.1rem;
+}
+
+.connect-prompt {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid #00ffcc;
+  border-radius: 10px;
+  padding: 3rem;
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.3);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.connect-prompt p {
+  font-size: 1.2rem;
+  color: #f4f4f4;
+}
+
+.referral-info {
+  margin-top: 3rem;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid #00ffcc;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.3);
+}
+
+.referral-info h2 {
+  color: #00ffcc;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.referral-steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.step {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 1.5rem;
+  border: 1px solid rgba(0, 255, 204, 0.2);
+}
+
+.step-number {
+  background: linear-gradient(135deg, #00ffcc 0%, #00b3ff 100%);
+  color: #000;
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.step-content h3 {
+  color: #00ffcc;
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.step-content p {
+  color: #f4f4f4;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.rewards-info {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 1.5rem;
+  border: 1px solid rgba(0, 255, 204, 0.2);
+}
+
+.rewards-info h3 {
+  color: #00ffcc;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.rewards-info ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  list-style-type: none;
+  padding: 0;
+}
+
+.rewards-info li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.rewards-info li::before {
+  content: "•";
+  color: #00ffcc;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0.25rem;
+  top: -0.125rem;
+}
+
+@media (max-width: 768px) {
+  .referral-page {
+    padding: 1rem;
+  }
+  
+  .referral-steps {
+    flex-direction: column;
+  }
+  
+  .step {
+    width: 100%;
+  }
+  
+  .rewards-info ul {
+    grid-template-columns: 1fr;
+  }
+} 

@@ -1,0 +1,98 @@
+# 🟢 Cursor AI Rules for Abstract L2 Wager Game (Slither.io-style, Ethereum, Abs.xyz)
+
+**IMPORTANT PRINCIPLES:**
+- **Do NOT change the UI look, style, or design unless the user specifically requests it, or unless it is absolutely required for a critical bugfix. If a UI change is needed for a bugfix, always ask the user for approval first.**
+- **Do NOT make assumptions. Always go by the facts present in the codebase, user instructions, or Abs.xyz documentation.**
+- **All code and logic changes must be based on the actual game logic and requirements, not on assumptions or personal preferences.**
+- **If a requirement or feature is unclear, always ask the user for clarification before proceeding.**
+
+## 1. General Principles
+- **Perfection is the baseline:** All code must be robust, readable, and error-free. No warnings, no console errors, no unhandled exceptions.
+- **Security is non-negotiable:** All smart contract, wallet, and wager logic must be audited, tested, and protected against exploits.
+- **User experience is king:** The game must be smooth, responsive, and visually polished on all supported devices.
+- **Web3 best practices:** All blockchain interactions must be reliable, gas-efficient, and user-friendly.
+- **Never change the UI look unless explicitly requested or absolutely required for a critical bugfix (and always ask first).**
+- **Never make assumptions—always use facts from code, user instructions, or docs.**
+
+## 2. Frontend (React/JS/TS)
+- **No React warnings or errors:** All components must be free of prop type errors, invalid DOM attributes, and deprecated APIs.
+- **No undefined variables or refs:** All state, refs, and hooks must be defined before use.
+- **No use of `<style jsx>`:** Use only `<style>` or CSS modules for styling.
+- **All state updates must be atomic and race-condition free.**
+- **All achievement and quest logic must be fully synchronized with the game state and server events.**
+- **All websocket and contract errors must be caught and handled gracefully, with user feedback.**
+- **All user input must be sanitized and validated.**
+- **All navigation (react-router) must preserve and pass correct session/game state.**
+- **All UI must be responsive and accessible (ARIA, keyboard, color contrast).**
+- **All images, sounds, and assets must be preloaded and optimized.**
+- **No hardcoded magic numbers—use constants and config files.**
+- **All localStorage/sessionStorage usage must be robust and fallback-safe.**
+- **All game logic must be thoroughly unit and integration tested.**
+- **Do NOT change the UI look or design unless the user specifically requests it, or unless it is absolutely required for a critical bugfix (in which case, always ask the user first).**
+- **If a requirement or feature is unclear, always ask the user for clarification before proceeding.**
+
+## 3. Backend/Server (Node.js, WebSocket, etc.)
+- **All player actions must be validated server-side.**
+- **All kill, escape, and reward events must be broadcast with all necessary data (e.g., killed player’s segment count).**
+- **No unhandled promise rejections or uncaught exceptions.**
+- **All state mutations must be atomic and race-condition free.**
+- **All game state must be consistent and recoverable after crashes.**
+- **All wager/ETH logic must be double-checked for exploits and edge cases.**
+- **All server logs must be clear, actionable, and not spammed.**
+- **All websocket messages must be versioned and schema-validated.**
+- **All sensitive data must be protected and never leaked to clients.**
+- **All leaderboard and history logic must be tamper-proof.**
+- **Never make assumptions—always use facts from code, user instructions, or docs.**
+
+## 4. Smart Contracts (Ethereum, Abstract L2)
+- **All contracts must be audited and tested (unit, integration, fuzz).**
+- **No reentrancy, overflow, or unchecked call vulnerabilities.**
+- **All wager/escrow logic must be atomic and revert on error.**
+- **All user funds must be withdrawable at all times.**
+- **All contract upgrades must be planned and migration-safe.**
+- **All contract events must be emitted for all state changes.**
+- **All contract addresses and ABIs must be versioned and environment-specific.**
+
+## 5. Abstract/Abs.xyz Integration
+- **All wallet and transaction flows must use the latest Abs.xyz SDKs and follow their security guidelines.**
+- **All user onboarding, login, and wager flows must be seamless and error-free.**
+- **All Abs.xyz API calls must be retried and fallback-safe.**
+- **All Abs.xyz documentation (scrambled from docs.abs.xyz) must be followed for L2, wallet, and wager flows.**
+- **All Abs.xyz error codes and edge cases must be handled.**
+- **Never make assumptions—always use facts from code, user instructions, or docs.**
+
+## 6. Game Design & Incentives
+- **All gameplay must be fair, skill-based, and free of pay-to-win mechanics.**
+- **All incentives (SP, ETH, achievements, quests) must be clearly explained and bug-free.**
+- **All anti-cheat and anti-bot measures must be in place.**
+- **All session stats, achievements, and rewards must be accurate and never lost.**
+- **All game loops must be fun, replayable, and rewarding.**
+- **Never change the UI look or design unless the user specifically requests it, or unless it is absolutely required for a critical bugfix (in which case, always ask the user first).**
+
+## 7. Testing & Launch
+- **All code must pass linting, type-checking, and all tests (unit, integration, e2e).**
+- **All edge cases (disconnects, reconnects, browser refresh, mobile, etc.) must be tested.**
+- **All user flows (register, play, wager, win, lose, withdraw) must be tested by multiple users.**
+- **All error messages must be clear, actionable, and never cryptic.**
+- **All analytics and monitoring must be in place for launch.**
+- **All legal/compliance requirements for wagering and crypto must be met.**
+- **All documentation must be up-to-date and clear for both users and developers.**
+- **If a requirement or feature is unclear, always ask the user for clarification before proceeding.**
+
+## 8. Continuous Improvement
+- **All bugs must be tracked and fixed before launch.**
+- **All user feedback must be reviewed and acted on.**
+- **All code must be reviewed by at least one other developer.**
+- **All dependencies must be up-to-date and security-checked.**
+- **All deployments must be automated and rollback-safe.**
+
+## 9. Abs.xyz Docs Scramble
+- **Whenever in doubt, consult the latest Abs.xyz documentation (scrambled or not) for L2, wallet, wager, and security best practices.**
+- **If a feature is unclear, default to the most secure and user-friendly implementation.**
+- **Never make assumptions—always use facts from code, user instructions, or docs.**
+
+## 10. Zero Tolerance for Errors
+- **No error, warning, or console log should be present in production.**
+- **No unhandled edge case should be left before launch.**
+- **No user should ever lose funds, progress, or rewards due to a bug.**
+- **No feature should be shipped unless it is perfect.** 

@@ -1,0 +1,269 @@
+[
+  {
+    "inputs": [
+      { "internalType": "address", "name": "referrer", "type": "address" }
+    ],
+    "name": "joinGame",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "escapeGame",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "withdraw",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "string", "name": "code", "type": "string" }
+    ],
+    "name": "setReferralCode",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "string", "name": "code", "type": "string" }
+    ],
+    "name": "setReferrer",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "claimReferralRewards",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "player", "type": "address" }
+    ],
+    "name": "getReferralCode",
+    "outputs": [
+      { "internalType": "string", "name": "", "type": "string" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "string", "name": "code", "type": "string" }
+    ],
+    "name": "getAddressByReferralCode",
+    "outputs": [
+      { "internalType": "address", "name": "", "type": "address" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "referrer", "type": "address" }
+    ],
+    "name": "getReferralStats",
+    "outputs": [
+      { "internalType": "uint256", "name": "totalReferrals", "type": "uint256" },
+      { "internalType": "uint256", "name": "activeReferrals", "type": "uint256" },
+      { "internalType": "uint256", "name": "totalEarnings", "type": "uint256" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "referrer", "type": "address" }
+    ],
+    "name": "getReferrals",
+    "outputs": [
+      {
+        "components": [
+          { "internalType": "address", "name": "player", "type": "address" },
+          { "internalType": "uint256", "name": "gamesPlayed", "type": "uint256" },
+          { "internalType": "uint256", "name": "totalWagered", "type": "uint256" },
+          { "internalType": "uint256", "name": "totalWon", "type": "uint256" },
+          { "internalType": "uint256", "name": "netEarned", "type": "uint256" },
+          { "internalType": "uint256", "name": "referralEarnings", "type": "uint256" },
+          { "internalType": "uint256", "name": "lastActive", "type": "uint256" },
+          { "internalType": "uint256", "name": "sp", "type": "uint256" }
+        ],
+        "internalType": "struct Snakstract.Referral[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "player", "type": "address" }
+    ],
+    "name": "getPlayerDetails",
+    "outputs": [
+      { "internalType": "uint256", "name": "stake", "type": "uint256" },
+      { "internalType": "bool", "name": "inGame", "type": "bool" },
+      { "internalType": "uint256", "name": "lastEscape", "type": "uint256" },
+      { "internalType": "uint256", "name": "gameStartTime", "type": "uint256" },
+      { "internalType": "address", "name": "referrer", "type": "address" },
+      { "internalType": "uint256", "name": "referralEarnings", "type": "uint256" },
+      { "internalType": "uint256", "name": "survivalRewards", "type": "uint256" },
+      { "internalType": "uint256", "name": "totalSurvivalTime", "type": "uint256" },
+      { "internalType": "uint256", "name": "gamesPlayed", "type": "uint256" },
+      { "internalType": "uint256", "name": "sp", "type": "uint256" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getSurvivalRewardsInfo",
+    "outputs": [
+      { "internalType": "uint256", "name": "totalPool", "type": "uint256" },
+      { "internalType": "uint256", "name": "totalGames", "type": "uint256" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "treasury",
+    "outputs": [
+      { "internalType": "address", "name": "", "type": "address" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "playerAddr", "type": "address" },
+      { "internalType": "uint256", "name": "orbs", "type": "uint256" }
+    ],
+    "name": "earnOrbSP",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "killer", "type": "address" },
+      { "internalType": "bool", "name": "tookEth", "type": "bool" }
+    ],
+    "name": "earnKillSP",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "causer", "type": "address" }
+    ],
+    "name": "earnCauseDeathSP",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "winner", "type": "address" }
+    ],
+    "name": "earnWinSP",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "escaper", "type": "address" }
+    ],
+    "name": "earnEscapeSP",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "", "type": "address" }
+    ],
+    "name": "players",
+    "outputs": [
+      { "internalType": "uint256", "name": "stake", "type": "uint256" },
+      { "internalType": "bool", "name": "inGame", "type": "bool" },
+      { "internalType": "uint256", "name": "lastEscape", "type": "uint256" },
+      { "internalType": "uint256", "name": "gameStartTime", "type": "uint256" },
+      { "internalType": "address", "name": "referrer", "type": "address" },
+      { "internalType": "uint256", "name": "referralEarnings", "type": "uint256" },
+      { "internalType": "uint256", "name": "survivalRewards", "type": "uint256" },
+      { "internalType": "uint256", "name": "totalSurvivalTime", "type": "uint256" },
+      { "internalType": "uint256", "name": "gamesPlayed", "type": "uint256" },
+      { "internalType": "uint256", "name": "sp", "type": "uint256" },
+      { "internalType": "string", "name": "referralCode", "type": "string" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "string", "name": "", "type": "string" }
+    ],
+    "name": "referralCodeToAddress",
+    "outputs": [
+      { "internalType": "address", "name": "", "type": "address" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "", "type": "address" }
+    ],
+    "name": "addressToReferralCode",
+    "outputs": [
+      { "internalType": "string", "name": "", "type": "string" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "", "type": "address" }
+    ],
+    "name": "referralStats",
+    "outputs": [
+      { "internalType": "uint256", "name": "totalReferrals", "type": "uint256" },
+      { "internalType": "uint256", "name": "activeReferrals", "type": "uint256" },
+      { "internalType": "uint256", "name": "totalEarnings", "type": "uint256" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "player", "type": "address" },
+      { "internalType": "uint256", "name": "amount", "type": "uint256" }
+    ],
+    "name": "addEthOrbWinnings",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "name": "ethOrbWinnings",
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "stateMutability": "view",
+    "type": "function"
+  }
+] 

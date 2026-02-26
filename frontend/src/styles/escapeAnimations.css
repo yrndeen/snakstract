@@ -1,0 +1,3 @@
+/* CSS Animations for Escape Summary */
+.summary-glow { animation: glow 1.5s ease-in-out infinite; }
+@keyframes glow { 0% { box-shadow: 0 0 5px #00ffcc; } 50% { box-shadow: 0 0 20px #00ffcc; } 100% { box-shadow: 0 0 5px #00ffcc; } }

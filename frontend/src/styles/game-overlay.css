@@ -1,0 +1,12 @@
+.game-overlay {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  background-color: rgba(0,0,0,0.85);
+  color: #00ffcc;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #00ffcc55;
+  box-shadow: 0 0 10px #00ffcc44;
+  z-index: 1000;
+}

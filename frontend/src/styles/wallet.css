@@ -1,0 +1,44 @@
+.wallet-connection {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  color: #00ffcc;
+}
+
+.wallet-details {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.wallet-dropdown {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  background-color: #1a1a1a;
+  border: 1px solid #00ffcc33;
+  border-radius: 6px;
+  display: none;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.wallet-details:hover .wallet-dropdown {
+  display: flex;
+}
+
+.wallet-dropdown button,
+.wallet-dropdown a {
+  background: none;
+  border: none;
+  color: #00ffcc;
+  text-align: left;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.wallet-dropdown a {
+  text-decoration: none;
+}
